@@ -12,15 +12,15 @@ export type TRoutePaths = {
 const routesPaths = (): TRoutePaths[] => {
   return [
     {
-      path: "/title",
+      path: "app1/title",
       element: <Title />,
     },
     {
-      path: "/register",
+      path: "app1/register",
       element: <Register />,
     },
     {
-      path: "/formik",
+      path: "app1/formik",
       element: <FormFormik />,
     },
   ];

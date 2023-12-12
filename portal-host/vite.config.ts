@@ -10,9 +10,9 @@ export default defineConfig({
       name: "host-app",
       remotes: {
         remoteApp: "http://localhost:3302/assets/remoteEntry.js",
-        // remoteFormApp: "http://localhost:4402/assets/remoteEntry.js",
+        remoteFormApp: "http://localhost:4402/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   server: {

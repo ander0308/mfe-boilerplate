@@ -19,7 +19,7 @@ const AppRoutes = () => {
   ];
 
   return (
-    <Suspense fallback={<p>carregandos...</p>}>
+    <Suspense fallback={<p>carregando...</p>}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

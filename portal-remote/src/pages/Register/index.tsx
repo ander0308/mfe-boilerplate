@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 import styles from "./styles.module.scss";
 
 const Register = () => {
-  const { control, handleSubmit } = useForm({
+  const { control, handleSubmit, register } = useForm({
     defaultValues: {
       nome: "",
       email: "",
@@ -22,7 +22,7 @@ const Register = () => {
     >
       <h1 className={styles.h1}>Register</h1>
 
-      {/* <div>
+      <div>
         <span>Nome:</span>
         <input type="text" {...register("nome")} />
       </div>
@@ -30,7 +30,7 @@ const Register = () => {
       <div>
         <span>Email:</span>
         <input type="text" {...register("email")} />
-      </div> */}
+      </div>
 
       <Controller
         control={control}

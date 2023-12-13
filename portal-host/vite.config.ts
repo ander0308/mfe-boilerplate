@@ -18,4 +18,10 @@ export default defineConfig({
   server: {
     port: 3300,
   },
+  build: {
+    modulePreload: false,
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
+  },
 });

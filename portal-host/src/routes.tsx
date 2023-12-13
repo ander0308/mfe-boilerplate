@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { NotFound } from "./pages/NotFound";
 
 import appRemote from "remoteApp/routes";
-// import appFormRemote from "remoteFormApp/routes";
+import appFormRemote from "remoteFormApp/routes";
 
 type TRoutePaths = {
   path: string;
@@ -15,11 +15,11 @@ type TRoutePaths = {
 const AppRoutes = () => {
   const routes: TRoutePaths[] = [
     ...appRemote(),
-    // ...appFormRemote()
+    ...appFormRemote()
   ];
 
   return (
-    <Suspense fallback={<p>carregandos...</p>}>
+    <Suspense fallback={<p>carregando...</p>}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
